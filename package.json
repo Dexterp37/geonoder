@@ -1,11 +1,17 @@
 {
-    "author": "Alessio Placitelli",
     "name": "geonoder",
-    "description": "Node commandline application to replace selected text in a file.",
+    "author": "Alessio Placitelli",
     "version": "0.0.1",
+    "description": "A NodeJS client for geocoding/reverse address lookup with plug-in services.",
+    "license": "MIT",
+    "keywords": [
+        "geocoder",
+        "geocoding",
+        "cache"
+    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/Dexterp37/geonoder"
+        "url": "https://github.com/Dexterp37/geonoder.git"
     },
     "main": "./lib/geonoder",
     "dependencies": {},
