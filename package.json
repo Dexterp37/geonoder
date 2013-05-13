@@ -1,0 +1,19 @@
+{
+    "author": "Alessio Placitelli",
+    "name": "geonoder",
+    "description": "Node commandline application to replace selected text in a file.",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Dexterp37/geonoder"
+    },
+    "main": "./lib/geonoder",
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "1.9.x"
+    },
+    "optionalDependencies": {},
+    "engines": {
+        "node": "*"
+    }
+}
