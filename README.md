@@ -3,6 +3,12 @@ geonoder
 
 A NodeJS client for geocoding/reverse address lookup with plug-in services.
 
+Supported Providers
+-------------------
+
+* Google
+* Nominatim
+
 Installation
 ------------
 To install this module in your project issue this command
