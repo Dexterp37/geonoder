@@ -23,14 +23,14 @@
 var assert = require('assert')
 var geonoder = require('../lib/geonoder')
 
-var plebiscitoAddress = 'Via del Plebiscito, 102, 00186 Rome, Italy'
-var plebiscitoLat = 41.8965209
+var plebiscitoAddress = 'Via della Gatta, 00188 Rome, Italy'
+var plebiscitoLat = 41.8963353
 var plebiscitoLong = 12.4805225
 
-describe('google', function() {
+describe('nominatim', function() {
 
     it('fetches the latitude and longitude', function(done) {
-        geonoder.toCoordinates(plebiscitoAddress, geonoder.providers.google, function(lat, long) {
+        geonoder.toCoordinates(plebiscitoAddress, geonoder.providers.nominatim, function(lat, long) {
             assert.equal(true, geonoder.isLatitudeValid(lat))
             assert.equal(true, geonoder.isLongitudeValid(long))
             done()
@@ -38,7 +38,7 @@ describe('google', function() {
     })
 
     it('fetches the address', function(done) {
-        geonoder.toAddress(plebiscitoLat, plebiscitoLong, geonoder.providers.google, function(address) {
+        geonoder.toAddress(plebiscitoLat, plebiscitoLong, geonoder.providers.nominatim, function(address) {
             var streetMarker = "Via";
             assert.notEqual(null, address);
             assert.notEqual(-1, address.indexOf(streetMarker))

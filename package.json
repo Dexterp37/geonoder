@@ -1,12 +1,13 @@
 {
     "name": "geonoder",
     "author": "Alessio Placitelli",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "A NodeJS client for geocoding/reverse address lookup with plug-in services.",
     "license": "MIT",
     "keywords": [
         "geocoder",
         "geocoding",
+        "geocode",
         "cache"
     ],
     "repository": {
